@@ -1,0 +1,199 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(2,0,36); */
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,224,85,1) 0%, rgba(140,140,248,1) 51%, rgba(0,212,255,1) 96%); */
+}
+.reg{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap:1px;
+  font-size: 1.1rem;
+  min-width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.reg h1{
+  text-align: center;
+}
+.reg input,select{
+  border-radius: 8px;
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+  margin: 4px 0px;
+}
+.reg button{
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1.4rem;
+  color: rgb(2, 155, 74);
+  /* margin: auto; */
+  transition:0.8s;
+  background-color: #ccf9dd;
+}
+.reg button:hover{
+  background-color: #8fd3f4;
+  color: #018c85;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+header{
+  width: 100%;
+  display: flex;
+  height: max-content;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top:0;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  text-wrap: nowrap;
+}
+header button{
+  border-radius: 24px;
+  background-color: #84fab0;
+  color: rgb(161, 12, 206);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+}
+.company-info{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: azure;
+  position: absolute;
+  top:60px;
+  /* cursor: pointer; */
+  /* padding: 1rem; */
+  right: 50px;
+}
+.head button{
+   cursor: pointer;
+}
+.head button:hover{
+  background-color: #8fd3f4;
+  color: #018c85;
+}
+.company-info p{
+  padding: 1rem ;
+  margin: 0;
+}
+.company-info p:hover{
+  cursor: pointer;
+   background-color: rgb(247, 247, 247);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 12rem;
+  border-radius: 4px;
+  /* border: 1px solid; */
+  margin: 0.2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.cont-top{
+  width: 95%;
+  height: 80%;
+  display: flex;
+}
+ .container button{
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #24f9ee;
+  border:none;
+  color:#c66b40;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+.cont-left{
+  width:30%;
+  height:80%;
+  padding: 1rem;
+
+}
+.cont-left img{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.cont-right{
+  /* border: 1px solid; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.cont-right h3{
+  margin:0;
+  margin-top: 1rem;
+}
+.cont-right span{
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  height: 1.3rem;
+}
+.cont-right span:nth-last-child(1){
+  color: #615ce3;
+}
+.sidebar{
+  position: fixed;
+  top:5rem;
+  bottom: 0;
+}
+.search{
+  width: 100vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.data-list{
+  display: flex;
+  flex-wrap: wrap;
+   width: 80%;
+   gap: 1.5em;
+  margin:auto;
+  
+}
+.search-form input{
+   padding: 0.8rem;
+   border-radius: 2rem;
+   margin-left:0.5em;
+   margin-right: 0.5em; 
+   font-size: 0.9em;
+   font-weight: 600;
+   outline: none;
+   border: none;
+}
+.no-search{
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 700;
+   color: lightcoral;
+}
